@@ -16,22 +16,7 @@ This is a command-line based AI-powered Email Assistant that connects with Gmail
 ---
 
 ## 🛠️ Project Structure
-email_assistant_cli/
-│
-├── auth.py                # Gmail & Calendar authentication
-├── email_read.py          # Fetch emails from Gmail
-├── summarizer.py          # Summarize email content using Ollama
-├── categorizer.py         # Categorize email content
-├── auto_reply.py          # AI-based reply generation
-├── calendar_scheduler.py  # Add events to Google Calendar
-├── slack_notify.py        # Send Slack notifications
-├── database.py            # SQLite database to store email data
-├── priority.py            # Determine priority of emails
-├── main.py                # Main controller script
-├── .env                   # Environment variables (not pushed)
-├── requirements.txt       # All dependencies
-└── README.md              # Project documentation
-
+(image1.png)
 
 ## 📦 Setup Instructions
 
