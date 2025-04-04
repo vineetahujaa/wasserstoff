@@ -1,0 +1,11 @@
+ollama
+python-dotenv
+requests
+google-auth
+google-auth-oauthlib
+google-api-python-client
+beautifulsoup4
+serpapi
+pytz
+python-dateutil
+schedule
