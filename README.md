@@ -47,3 +47,31 @@ APIs and Tools Required
 	3.	Slack API – Used to send notifications or messages to a Slack channel or user.
 	4.	Ollama – Used for performing LLM-based tasks like email summarization, categorization, and auto-replies.
 	5.	SERP API (Optional) – Can be used to perform Google Searches to enrich the context of an email before summarizing or replying.
+
+
+ ##Architecture Diagram
+            +-------------------+
+           |   Gmail Inbox     |
+           +-------------------+
+                    |
+                    v
+        +-------------------------+
+        | Email Reader (email.py) |
+        +-------------------------+
+                    |
+                    v
+      +-----------------------------+
+      | Summarizer (Ollama LLM)     |
+      +-----------------------------+
+        |           |           |
+        v           v           v
++---------------+ +-----------+ +------------------+
+| Categorizer   | | Priority  | | Auto Replier     |
+| (category.py) | | Handler   | | (auto_reply.py)  |
++---------------+ +-----------+ +------------------+
+        |                           |
+        v                           v
++---------------------+     +---------------------+
+| Calendar Scheduler  |     | Slack Notifier      |
+| (calendar.py)       |     | (slack_notify.py)   |
++---------------------+     +---------------------+
