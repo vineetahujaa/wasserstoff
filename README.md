@@ -16,7 +16,8 @@ This is a command-line based AI-powered Email Assistant that connects with Gmail
 ---
 
 ## 🛠️ Project Structure
-(image1.png)
+Project Structure(image1.png)
+![Project Structure(](image1.png)
 
 ## 📦 Setup Instructions
 
